@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+# 配置的数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://60.205.176.165:3306/health?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    password: 123456
+    username: root
+# 配置注册到eureka服务的名称
+  application:
+    name: member-service
+# 配置注册中心地址
+eureka.client.service-url.defaultZone: http://127.0.0.1:10086/eureka
